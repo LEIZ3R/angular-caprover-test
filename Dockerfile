@@ -30,7 +30,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
 # Copies static resources from builder stage
-COPY --from=builder /app/dist .
+COPY --from=builder /app/dist/angular-ci-test .
 
 EXPOSE 80
 
